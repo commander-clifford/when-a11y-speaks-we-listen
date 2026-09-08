@@ -1,6 +1,10 @@
 # A11y Chats website
 
-A static download and showcase page for GitHub Pages. Serve this directory as the site root. It needs no build, JavaScript, external font, analytics, or component runtime. The release download and release-note links target version 2.0.0.
+A static download and showcase page for GitHub Pages. Serve this directory as the site root. It needs no build, external font, analytics, or component runtime. Local scripts keep paragraph endings together and mark the current section in the sticky navigation. Locally packaged GSAP core and ScrollToPlugin animate section navigation, with instant navigation for reduced motion and real anchor links as the fallback. The release download and release-note links target version 2.0.0.
+
+`typography.js` inserts a non-breaking space between each paragraph's final two words by editing its text nodes. Links, emphasis, and other inline markup remain intact. The same rule covers the report caption and installation prose. CSS `text-wrap: pretty` provides an additional progressive enhancement.
+
+The current navigation link uses bold text and `aria-current="location"`. Hidden, accessibility-excluded bold labels reserve its width so active-state changes do not move the navigation. Header measurements keep anchor offsets accurate after responsive layout changes. GSAP's separate terms and upstream notices are recorded in [vendor/gsap/NOTICE.md](vendor/gsap/NOTICE.md).
 
 ## Design source
 
@@ -14,4 +18,4 @@ The report PNG is 1152 × 636 pixels. `assets/editorial-example.png` is an AI-ge
 
 ## Validation scope
 
-Local Chrome checks covered loaded assets, the primary release link, skip link and keyboard section navigation, 320-pixel reflow, selected text/focus contrast pairs, forced-color focus, and reduced-motion behavior. Rendering made no HTTP requests and produced no runtime or CSP errors. Desktop and narrow screenshots were visually reviewed against the selected foundation. These are bounded automated and visual checks, not human assistive-technology testing or a WCAG conformance claim.
+Chrome checks covered loaded assets, the primary release link, paragraph wrapping, skip link and keyboard section navigation, current-section tracking during clicks and scrolling, responsive reflow, and reduced-motion behavior. Earlier foundation checks covered selected text/focus contrast pairs and forced-color focus. The page loads its executable code and imagery from its own origin. Desktop and narrow screenshots were visually reviewed against the selected foundation. These are bounded automated and visual checks, not human assistive-technology testing or a WCAG conformance claim.

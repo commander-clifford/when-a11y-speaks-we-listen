@@ -5,16 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Review webpage images and their alt text together—without opening developer tools. Meet A11y Chats, a Chrome extension for thoughtful image reviews.">
   <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
   <title>A11y Chats — A clearer way to review alt text</title>
   <link rel="icon" href="assets/icon.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
+  <script src="typography.js" defer></script>
+  <script src="vendor/gsap/gsap.min.js" defer></script>
+  <script src="vendor/gsap/ScrollToPlugin.min.js" defer></script>
+  <script src="navigation.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header shell">
     <a class="brand" href="#" aria-label="A11y Chats home"><img src="assets/icon.png" width="32" height="32" alt=""><span>A11y Chats</span></a>
-    <nav aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#install">Install guide</a></nav>
+    <nav aria-label="Main navigation"><a href="#how-it-works"><span>How it works</span><span class="nav-label-width" aria-hidden="true">How it works</span></a><a href="#install"><span>Install guide</span><span class="nav-label-width" aria-hidden="true">Install guide</span></a></nav>
   </header>
   <main id="main" tabindex="-1">
     <section class="hero shell" aria-labelledby="hero-title">

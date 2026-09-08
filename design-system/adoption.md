@@ -51,6 +51,14 @@ The image cards, page-metadata disclosure, semantic definition lists, and native
 
 ## Staged migration
 
+### Copywriter report direction
+
+The next actual report visual pass should make the image and its **recorded alt text** the two dominant elements. A copywriter reviewing a hundred images should scan vertically through consistent rows, with each image directly beside its own alt text. Give the alt text generous, highly legible typography and strong contrast, almost as much visual prominence as the image. Keep each image/alt pair together when the layout adapts to a narrow screen.
+
+Secondary metadata, status labels and detail actions should support this comparison rather than dominate it. Preserve raw per-element values and the missing/empty/whitespace distinctions; never substitute a computed name, invented description or grade for the actual alt attribute. Keep full supporting evidence available in details. When the marketing preview is next refined, show the implemented report faithfully and retain that paired hierarchy.
+
+This is the recorded direction for future Spectrum report integration. It does not implement that integration, change the released extension, assign a future version, or replace the current marketing preview.
+
 1. Review this built sample and recorded screenshots at desktop/mobile widths. Confirm that complete metadata stays accessible and image evidence appears promptly.
 2. Move the chosen semantic aliases and locally bundled component subset into the packaged report. Keep external scripts local and preserve the report's existing CSP security boundary.
 3. Connect UI actions to the existing session snapshot contract and rescan/Stop lifecycle. Preserve source URL, all image fields, warnings, limit reasons, and report cleanup behavior.
