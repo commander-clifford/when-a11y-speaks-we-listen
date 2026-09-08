@@ -16,6 +16,7 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <span hidden id="new-tab-note">Opens in a new tab.</span>
   <header class="site-header shell">
     <a class="brand" href="#" aria-label="A11y Chats home"><img src="assets/icon.png" width="32" height="32" alt=""><span>A11y Chats</span></a>
     <nav aria-label="Main navigation"><a href="#how-it-works"><span>How it works</span><span class="nav-label-width" aria-hidden="true">How it works</span></a><a href="#install"><span>Install guide</span><span class="nav-label-width" aria-hidden="true">Install guide</span></a></nav>
@@ -27,14 +28,14 @@
       <p class="hero-description">Review webpage images and their alt text together—without opening developer tools.</p>
       <a class="download-button" href="https://github.com/commander-clifford/a11y-chats/releases/download/v2.0.0/a11y-chats-2.0.0.zip">Download A11y Chats</a>
       <p class="download-note">Version 2.0.0 · ZIP download · Install locally in Chrome</p>
-      <a class="quiet-link" href="https://github.com/commander-clifford/a11y-chats/releases/tag/v2.0.0">Read the release notes</a>
+      <a class="quiet-link" href="https://github.com/commander-clifford/a11y-chats/releases/tag/v2.0.0" target="_blank" rel="noopener noreferrer" aria-describedby="new-tab-note">Read the release notes</a>
     </section>
 
     <section class="showcase shell" aria-labelledby="preview-title">
       <div class="section-intro"><h2 id="preview-title">The image. The words. A clearer review.</h2><p>See what is there, what is empty, and what is missing.</p></div>
       <figure class="product-preview">
-        <a class="screenshot-link" href="assets/example-report.png" aria-label="View the example report screenshot at full size"><img src="assets/example-report.png" width="1152" height="636" fetchpriority="high" alt="Illustrative native report with three image cards. One has alt text, one has an empty alt attribute, and one is missing the attribute."></a>
-        <figcaption><strong>Illustrative example, current extension UI.</strong> Example data rendered in the installed extension, not a customer report. No website was scanned for this image. <a href="assets/example-report.png">View full size</a>.</figcaption>
+        <a class="screenshot-link" href="assets/example-report.png" target="_blank" rel="noopener noreferrer" aria-label="View the example report screenshot at full size (opens in a new tab)"><img src="assets/example-report.png" width="1152" height="636" fetchpriority="high" alt="Illustrative native report with three image cards. One has alt text, one has an empty alt attribute, and one is missing the attribute."></a>
+        <figcaption><strong>Illustrative example, current extension UI.</strong> Example data rendered in the installed extension, not a customer report. No website was scanned for this image. <a href="assets/example-report.png" target="_blank" rel="noopener noreferrer">View full size (opens in a new tab)</a>.</figcaption>
       </figure>
     </section>
 
@@ -61,18 +62,23 @@
       <h2 id="coverage-title">A useful view, with clear limits.</h2>
       <p>A scan includes image elements already in the main page, including offscreen images, and explores eligible horizontal and vertical scrollable components. It keeps up to 500 image records within a bounded scan. Stopped or limited scans explain their partial coverage.</p>
       <p>Some content is outside that view, including iframe and shadow-root content, CSS background images, and slides that have not appeared in the page yet. The report is evidence for your review, not an accessibility grade or a screen-reader simulation. Image previews may contact their original hosts.</p>
-      <a href="https://github.com/commander-clifford/a11y-chats/blob/main/audit/FEATURE_CONTRACT.md">Read the full coverage details</a>
+      <a href="https://github.com/commander-clifford/a11y-chats/blob/main/audit/FEATURE_CONTRACT.md" target="_blank" rel="noopener noreferrer" aria-describedby="new-tab-note">Read the full coverage details</a>
     </section>
 
     <section id="install" class="install-section shell" aria-labelledby="install-title">
-      <div><p class="eyebrow">Start with a local install</p><h2 id="install-title">Bring it into your<br> next copy review.</h2><p>This early release is installed from a ZIP file, using Chrome’s extension settings. It is not available in the Chrome Web Store.</p><a class="text-action" href="https://github.com/commander-clifford/a11y-chats/releases/download/v2.0.0/a11y-chats-2.0.0.zip">Get the version 2.0.0 ZIP</a></div>
+      <div><p class="eyebrow">Start with a local install</p><h2 id="install-title">Bring it into your<br> next copy review.</h2><p>This early release is installed from a ZIP file, using Chrome’s extension settings. It is not yet available in the Chrome Web Store.</p><a class="text-action" href="https://github.com/commander-clifford/a11y-chats/releases/download/v2.0.0/a11y-chats-2.0.0.zip">Get the version 2.0.0 ZIP</a><p class="compatibility-note"><a href="https://github.com/commander-clifford/a11y-chats/blob/main/BROWSER_SUPPORT.md" target="_blank" rel="noopener noreferrer" aria-describedby="new-tab-note">Browser compatibility</a></p></div>
       <ol class="install-steps">
         <li><strong>Download and unzip.</strong><span>Save the A11y Chats ZIP, then extract it to a folder you will keep on your computer.</span></li>
         <li><strong>Open Chrome’s extension settings.</strong><span>Enter <code>chrome://extensions</code> in the address bar and turn on <strong>Developer mode</strong>.</span></li>
         <li><strong>Load the extension.</strong><span>Choose <strong>Load unpacked</strong> and select the extracted folder—the one containing <code>manifest.json</code>. Pin A11y Chats from Chrome’s Extensions menu for easy access.</span></li>
       </ol>
+      <section class="coming-next" aria-labelledby="coming-next-title">
+        <p class="eyebrow">Looking ahead</p>
+        <h3 id="coming-next-title">Chrome Web Store installation</h3>
+        <p>The ZIP download above is available now. We plan to add Chrome Web Store installation so you can install A11y Chats without enabling Developer mode or loading an unpacked folder.</p>
+      </section>
     </section>
   </main>
-  <footer class="site-footer shell"><div class="footer-brand"><img src="assets/icon.png" width="24" height="24" alt=""><span>A11y Chats</span></div><div class="footer-links"><a href="https://github.com/commander-clifford/a11y-chats">Source on GitHub</a><a href="https://github.com/commander-clifford/a11y-chats/releases/tag/v2.0.0">Release notes</a></div><p>Made for thoughtful image reviews. An early local-install Chrome extension.</p></footer>
+  <footer class="site-footer shell"><div class="footer-identity"><div class="footer-brand"><img src="assets/icon.png" width="24" height="24" alt=""><span>A11y Chats</span></div><p>Made for thoughtful image reviews. An early local-install Chrome extension.</p></div><div class="footer-links"><a href="https://github.com/commander-clifford/a11y-chats" target="_blank" rel="noopener noreferrer" aria-describedby="new-tab-note">Source on GitHub</a><a href="https://github.com/commander-clifford/a11y-chats/releases/tag/v2.0.0" target="_blank" rel="noopener noreferrer" aria-describedby="new-tab-note">Release notes</a></div></footer>
 </body>
 </html>

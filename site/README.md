@@ -4,7 +4,11 @@ A static download and showcase page for GitHub Pages. Serve this directory as th
 
 `typography.js` inserts a non-breaking space between each paragraph's final two words by editing its text nodes. Links, emphasis, and other inline markup remain intact. The same rule covers the report caption and installation prose. CSS `text-wrap: pretty` provides an additional progressive enhancement.
 
-The current navigation link uses bold text and `aria-current="location"`. Hidden, accessibility-excluded bold labels reserve its width so active-state changes do not move the navigation. Header measurements keep anchor offsets accurate after responsive layout changes. GSAP's separate terms and upstream notices are recorded in [vendor/gsap/NOTICE.md](vendor/gsap/NOTICE.md).
+The current navigation link uses bold text, a persistent underline and `aria-current="location"`. Hidden, accessibility-excluded bold labels reserve its width, and the underline is positioned outside layout, so active-state changes do not move the navigation. Its indicator remains distinct from the keyboard focus outline and uses a system link color in forced-colors mode. Header measurements keep anchor offsets accurate after responsive layout changes. GSAP's separate terms and upstream notices are recorded in [vendor/gsap/NOTICE.md](vendor/gsap/NOTICE.md).
+
+Links to other pages and full-size images open in a new tab with `noopener noreferrer` and an accessible new-tab indication. Direct ZIP links keep their download behavior; section links stay within the page. The installation area links to the repository's browser compatibility guidance.
+
+A compact "Looking ahead" section within the installation area leads with the ZIP's current availability, then describes planned Chrome Web Store installation. It does not announce a submission, review, approval, or availability date; the ZIP instructions remain the current installation route.
 
 ## Design source
 

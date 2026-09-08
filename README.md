@@ -16,7 +16,9 @@ The ZIP contains only the installable extension. Unzip it, then use the resultin
 4. Keep the source tab active during scanning. **Stop scan and show results** returns partial results. Source/component scroll positions are restored.
 5. **Scan again** updates the existing report from its bound source tab. Closing the report deletes its session snapshot.
 
-The extension needs no build or dependency installation. It was tested in Chrome 152 on macOS; the manifest's Chrome 102 minimum is an API floor, not a verified compatibility matrix. Bounds are 500 image records, 24 scroll steps, 12 seconds, 12 containers and ten retained report tabs. The time limit is cooperative when page scripts block execution.
+The extension needs no build or dependency installation. Chrome 152 on macOS is verified. The current source requires Chrome 112 or newer so the browser's session-storage quota accommodates the existing report-size limit; this minimum is not a tested compatibility matrix. The published 2.0.0 ZIP remains unchanged and still declares Chrome 102. Use a current Chrome version with that download. See [browser support and installation options](BROWSER_SUPPORT.md) for the distinction between tested support and possible ports.
+
+Bounds are 500 image records, 24 scroll steps, 12 seconds, 12 containers and ten retained report tabs. The time limit is cooperative when page scripts block execution.
 
 Image previews may contact original image hosts without a referrer. Attribute inspection does not establish accessibility conformance or screen-reader speech. See the [feature contract](audit/FEATURE_CONTRACT.md).
 

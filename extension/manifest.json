@@ -3,7 +3,7 @@
   "name": "A11y Chats",
   "version": "2.0.0",
   "description": "Inspect image alternative text in a bounded scan of the current page and its scrollable components.",
-  "minimum_chrome_version": "102",
+  "minimum_chrome_version": "112",
   "permissions": [
     "activeTab",
     "storage",
