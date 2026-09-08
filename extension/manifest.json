@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "A11y Chats",
+  "version": "2.0.0",
+  "description": "Inspect image alternative text in a bounded scan of the current page and its scrollable components.",
+  "minimum_chrome_version": "102",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "A11y Chats: inspect images on this page",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "commands": {
+    "activate_extension": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Inspect images on the current page (customize in Chrome extension shortcuts)"
+    }
+  }
+}

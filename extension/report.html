@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>A11y Chats — image and page report</title>
+  <link rel="stylesheet" href="styles/inspector.css">
+  <link rel="stylesheet" href="styles/report-accessibility.css">
+  <script src="report.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#image-results">Skip to image results</a>
+  <main class="wrap">
+    <header class="report-heading">
+      <div>
+        <h1>A11y Chats</h1>
+        <p>Image descriptions and page metadata</p>
+      </div>
+      <button type="button" class="action-button" id="scan-again" disabled>Scan again</button>
+    </header>
+    <p id="report-status" role="status" aria-live="polite" aria-atomic="true">Loading saved report…</p>
+    <div id="report-error" class="error-message" role="alert" hidden></div>
+    <div id="report-content" hidden>
+      <section class="page-header md-surface md-elevation-1" aria-labelledby="page-title">
+        <div>
+          <h2 id="page-title"></h2>
+          <dl id="page-context" class="page-context"></dl>
+          <p id="page-description" class="desc" hidden></p>
+          <dl id="page-metadata" class="kvs"></dl>
+        </div>
+        <div id="social-preview" class="preview md-surface-variant"></div>
+      </section>
+      <section class="scan-summary" aria-labelledby="scan-heading">
+        <h2 id="scan-heading">DOM and scrollable component scan</h2>
+        <p id="scan-outcome"></p>
+        <ul id="scan-warnings" hidden></ul>
+        <p class="coverage-note">This report records image elements in the page’s main document. It does not inspect iframe documents, shadow roots, CSS backgrounds, or standalone SVG. Slides that appear only after a button press or other page interaction may be absent. Alt and ARIA values are the recorded attributes, not a computed accessible name. They need review in their page context; this report does not determine accessibility conformance.</p>
+        <p class="coverage-note">Previews may load the recorded image URLs and contact those image hosts. No referrer is sent. Some previews may be unavailable outside the source page.</p>
+      </section>
+      <section id="image-results" aria-labelledby="results-heading" tabindex="-1">
+        <div class="results-heading">
+          <h2 id="results-heading">Image elements</h2>
+          <p id="image-count" class="count"></p>
+        </div>
+        <p id="alt-summary"></p>
+        <p id="empty-results" hidden>No image elements were recorded within this scan’s scope.</p>
+        <div id="image-grid" class="grid"></div>
+      </section>
+    </div>
+    <noscript><p>This report needs JavaScript enabled in the extension.</p></noscript>
+  </main>
+
+  <dialog class="modal-shell is-open" id="image-modal" aria-labelledby="modal-title">
+    <button type="button" class="icon-button modal-close" id="modal-close" aria-label="Close image details" autofocus>×</button>
+    <div class="modal-nav-row">
+      <button type="button" class="nav-button" id="modal-prev" aria-label="Previous image">‹</button>
+      <p class="modal-position" id="modal-position" role="status" aria-live="polite" aria-atomic="true"></p>
+      <button type="button" class="nav-button" id="modal-next" aria-label="Next image">›</button>
+    </div>
+    <div class="modal-layout">
+      <div id="modal-media" class="modal-media md-surface-variant"></div>
+      <div class="modal-content">
+        <h2 id="modal-title">Image details</h2>
+        <dl class="modal-meta" id="modal-details"></dl>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>

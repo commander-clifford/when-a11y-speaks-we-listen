@@ -1,0 +1,69 @@
+{
+  "scope": "Selected Spectrum semantic token pairs only; not every rendered component/state or a conformance verdict",
+  "results": [
+    {
+      "pair": "Primary text on canvas",
+      "foreground": "#222222",
+      "background": "#F8F8F8",
+      "ratio": 14.98,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "pair": "Primary text on surface",
+      "foreground": "#222222",
+      "background": "#FFFFFF",
+      "ratio": 15.91,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "pair": "Secondary text on surface",
+      "foreground": "#464646",
+      "background": "#FFFFFF",
+      "ratio": 9.44,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "pair": "Accent text on surface",
+      "foreground": "#0265DC",
+      "background": "#FFFFFF",
+      "ratio": 5.39,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "pair": "Positive text on surface",
+      "foreground": "#007A4D",
+      "background": "#FFFFFF",
+      "ratio": 5.4,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "pair": "Notice text on surface",
+      "foreground": "#B14C00",
+      "background": "#FFFFFF",
+      "ratio": 5.38,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "pair": "Negative text on surface",
+      "foreground": "#D31510",
+      "background": "#FFFFFF",
+      "ratio": 5.41,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "pair": "Focus indicator on surface",
+      "foreground": "#147AF3",
+      "background": "#FFFFFF",
+      "ratio": 4.11,
+      "threshold": 3,
+      "passed": true
+    }
+  ]
+}

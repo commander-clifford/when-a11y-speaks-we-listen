@@ -1,52 +1,53 @@
-# Image Alt Text Inspector Chrome Extension
+# A11y Chats 2.0.0
 
-## Overview
+A local Chrome extension for inspecting raw image attributes and page/social metadata. It automatically inventories existing DOM image elements and explores eligible scrollable components within fixed limits. Missing, empty, whitespace-only and populated alt attributes remain distinct evidence for human review.
 
-The Image Alt Text Inspector is a Chrome extension that scrapes images within `<article>` tags from the currently open webpage, including their alt text, and displays them on a new page. This tool is especially useful for web developers, SEO specialists, and accessibility auditors to quickly assess and inspect the usage of images and their alternative texts on web pages.
+Review each webpage image beside its actual alt text without opening developer tools. This is the engineering-reviewed early local-install release for copywriters and other reviewers. Its working report uses native components; the reviewed [Adobe Spectrum sample](design-system/index.html) remains separate. Integration is paused.
 
-## Features
+**[Download Release 2](https://github.com/commander-clifford/a11y-chats/releases/download/v2.0.0/a11y-chats-2.0.0.zip)** · [Release notes](https://github.com/commander-clifford/a11y-chats/releases/tag/v2.0.0)
 
-- **Targeted Image Scraping**: Extracts images that are specifically children of `<article>` tags, ensuring relevance to the main content.
-- **Alt Text Display**: Collects and displays the alt text of each image, aiding in accessibility and SEO audits.
-- **Clickable Image Cards + Modal Viewer**: Each image card opens into a centered modal with blurred backdrop, larger image preview, readable metadata, and previous/next carousel navigation.
-- **Easy Activation**: Can be activated via a simple click on the extension icon or a keyboard shortcut (CMD+SHIFT+I for macOS, CTRL+SHIFT+I for Windows/Linux).
-- **Lazy-loaded Image Handling**: Scrolls through the entire page to trigger the loading of lazy-loaded images before scraping.
+The ZIP contains only the installable extension. Unzip it, then use the resulting folder for Load unpacked. When installing from this source repository, use `extension/`. This is not a Chrome Web Store listing.
 
-## Installation
+## Install locally
 
-1. **Download the Extension**: Clone this repository or download it as a ZIP file and extract it to a preferred location on your local machine.
-2. **Load the Extension in Chrome**:
-    - Open Chrome and navigate to `chrome://extensions/`.
-    - Enable Developer Mode by toggling the switch in the upper right corner.
-    - Click "Load unpacked" and select the folder containing the extension files.
-3. **Verify Installation**: Ensure that the "Image Alt Text Inspector" extension is visible in your Chrome extensions list and is enabled.
+1. Open Chrome's Extensions page and enable Developer mode.
+2. Choose **Load unpacked** and select this repository's `extension/` folder.
+3. Open an HTTP/HTTPS website and click the A11y Chats toolbar action. The optional defaults are Ctrl+Shift+Y or Command+Shift+Y; Chrome's extension shortcut settings can change them.
+4. Keep the source tab active during scanning. **Stop scan and show results** returns partial results. Source/component scroll positions are restored.
+5. **Scan again** updates the existing report from its bound source tab. Closing the report deletes its session snapshot.
 
-## Usage
+The extension needs no build or dependency installation. It was tested in Chrome 152 on macOS; the manifest's Chrome 102 minimum is an API floor, not a verified compatibility matrix. Bounds are 500 image records, 24 scroll steps, 12 seconds, 12 containers and ten retained report tabs. The time limit is cooperative when page scripts block execution.
 
-### Via Extension Icon
+Image previews may contact original image hosts without a referrer. Attribute inspection does not establish accessibility conformance or screen-reader speech. See the [feature contract](audit/FEATURE_CONTRACT.md).
 
-- Navigate to the webpage you want to inspect.
-- Click on the "Image Alt Text Inspector" extension icon in the Chrome toolbar.
-- A new tab will open, displaying all images from the page along with their alt text and metadata. Click any image card to open the larger modal viewer.
+## Contents and provenance
 
-### Using Keyboard Shortcut
+| Path | Purpose |
+| --- | --- |
+| `extension/` | Complete working native extension and necessary icons/styles. |
+| `originals/` | Six unchanged local candidate source files. Cloud equivalence is unverified. |
+| `archive/` | Nine local historical/assets references and nine unchanged public baseline files. |
+| `tests/` | Reproducible backend, collector, original-defect and browser checks. |
+| `design-system/` | Reviewed Spectrum sample, local bundle, exact dependencies, tokens and legal notices. |
+| `audit/` | Sanitized review summaries, feature contract, source hashes and references. |
 
-- Ensure you're focused on the browser window.
-- Activate the extension by pressing CMD+SHIFT+I (macOS) or CTRL+SHIFT+I (Windows/Linux).
-- A new tab will display the images and their alt text details as described above.
+The six expected cloud filenames were identified, but **zero cloud source contents were recovered or verified**. The original fifteen local references remain unchanged, with nine additional files preserved from the existing public pre-engineering baseline in `archive/public-baseline/`. The original private local archive retains full provenance and detailed validation evidence. Public history is preserved; private local history, paths/project identifiers and browser/session diagnostics are excluded. See [sanitation notes](audit/EXPORT_NOTES.md).
 
-## Customization
+## Release history
 
-You can customize the keyboard shortcut by navigating to `chrome://extensions/shortcuts` in Chrome and modifying the shortcut for the "Image Alt Text Inspector" extension.
+- [Release 1 — historical baseline](https://github.com/commander-clifford/a11y-chats/releases/tag/v1.0.0) points to the unchanged pre-engineering public commit. Its original manifest remains 0.1.9; `v1.0.0` labels the historical release, not a retroactive code change. It has known defects and is retained for comparison.
+- [Release 2 — reviewed rebuild](https://github.com/commander-clifford/a11y-chats/releases/tag/v2.0.0) contains the completed bounded MVP, with extension/package metadata aligned at 2.0.0. The public root license and prior branch history are retained.
 
-## Support
+Future Spectrum report integration and grading are unassigned follow-ups. Neither is included or assigned a future release number.
 
-For any issues, questions, or suggestions, please open an issue in the GitHub repository for this extension. Your feedback helps make this tool better for everyone.
+## Checks and Spectrum build
 
-## Contributing
+Node.js 22+ is required; the recorded run used Node 26.4.0. Run `npm test`, `npm run check`, and `npm run test:original` without dependency installation. Browser tests use isolated temporary profiles and localhost fixtures. Set `CHROME_BIN` to your Chrome executable, or provide `google-chrome` on PATH, then run the relevant scripts in `tests/`.
 
-Contributions are welcome! If you have improvements or bug fixes, please open a pull request or issue. Ensure your changes are well-documented and follow the existing code style.
+For example, after configuring `CHROME_BIN`: `node tests/browser-working.mjs`, `node tests/report-browser.mjs`, `node tests/collector-browser.mjs`, or `node tests/design-browser.mjs`. Generated local evidence is ignored by Git. Review it before sharing.
 
-## License
+The committed Spectrum bundle opens directly from `design-system/index.html`. To rebuild it: `npm ci --ignore-scripts`, then `npm run build:design`. Dependencies are pinned; there is no runtime CDN or font download. See [adoption notes](design-system/adoption.md).
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
+## Readiness
+
+The [engineering review](audit/ENGINEERING_REVIEW.md) documents resolved original defects separately from remaining release checks. The original P1 findings were fixed. Human assistive-technology validation, broader browser/site testing, Spectrum integration and distribution licensing remain open. The historical local readme references an absent MIT license file; the existing public same-project repository supplies an MIT notice, retained as an upstream reference in [license evidence](licenses/README.md). No new blanket license grant is asserted here. Spectrum and transitive legal notices are retained.

@@ -1,0 +1,100 @@
+[
+  {
+    "package": "@lit-labs/observers",
+    "version": "2.0.2",
+    "declaredLicense": "BSD-3-Clause",
+    "includedSuppliedTexts": [
+      "lit-labs--observers--LICENSE"
+    ]
+  },
+  {
+    "package": "@lit/reactive-element",
+    "version": "2.1.2",
+    "declaredLicense": "BSD-3-Clause",
+    "includedSuppliedTexts": [
+      "lit--reactive-element--LICENSE"
+    ]
+  },
+  {
+    "package": "@spectrum-web-components/base",
+    "version": "1.12.2",
+    "declaredLicense": "Apache-2.0",
+    "includedSuppliedTexts": []
+  },
+  {
+    "package": "@spectrum-web-components/button",
+    "version": "1.12.2",
+    "declaredLicense": "Apache-2.0",
+    "includedSuppliedTexts": []
+  },
+  {
+    "package": "@spectrum-web-components/progress-circle",
+    "version": "1.12.2",
+    "declaredLicense": "Apache-2.0",
+    "includedSuppliedTexts": []
+  },
+  {
+    "package": "@spectrum-web-components/reactive-controllers",
+    "version": "1.12.2",
+    "declaredLicense": "Apache-2.0",
+    "includedSuppliedTexts": []
+  },
+  {
+    "package": "@spectrum-web-components/shared",
+    "version": "1.12.2",
+    "declaredLicense": "Apache-2.0",
+    "includedSuppliedTexts": []
+  },
+  {
+    "package": "@spectrum-web-components/status-light",
+    "version": "1.12.2",
+    "declaredLicense": "Apache-2.0",
+    "includedSuppliedTexts": []
+  },
+  {
+    "package": "@spectrum-web-components/theme",
+    "version": "1.12.2",
+    "declaredLicense": "ISC",
+    "includedSuppliedTexts": []
+  },
+  {
+    "package": "focus-visible",
+    "version": "5.2.1",
+    "declaredLicense": "W3C",
+    "includedSuppliedTexts": [
+      "focus-visible--LICENSE.md"
+    ]
+  },
+  {
+    "package": "lit",
+    "version": "3.3.3",
+    "declaredLicense": "BSD-3-Clause",
+    "includedSuppliedTexts": [
+      "lit--LICENSE"
+    ]
+  },
+  {
+    "package": "lit-element",
+    "version": "4.2.2",
+    "declaredLicense": "BSD-3-Clause",
+    "includedSuppliedTexts": [
+      "lit-element--LICENSE"
+    ]
+  },
+  {
+    "package": "lit-html",
+    "version": "3.3.3",
+    "declaredLicense": "BSD-3-Clause",
+    "includedSuppliedTexts": [
+      "lit-html--LICENSE"
+    ]
+  },
+  {
+    "package": "esbuild",
+    "version": "0.28.2",
+    "declaredLicense": "MIT",
+    "includedSuppliedTexts": [
+      "esbuild--LICENSE.md"
+    ]
+  }
+]

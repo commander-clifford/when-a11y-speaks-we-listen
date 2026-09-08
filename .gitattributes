@@ -1,0 +1,6 @@
+# Generated Lit regex template literals contain significant end-of-line whitespace.
+design-system/dist/sample.js whitespace=-blank-at-eol
+# Preserve imported reference and license bytes, including original whitespace.
+originals/** -whitespace
+archive/** -whitespace
+licenses/** -whitespace

@@ -1,0 +1,151 @@
+{
+  "cloudFilesRecovered": 0,
+  "cloudEquivalenceVerified": false,
+  "note": "Six local candidate source files and nine local historical/assets references are preserved byte-for-byte; nine additional public baseline files are archived unchanged. Cloud contents were not recovered or verified. Personal filesystem paths, cloud project identifiers and private source history are excluded; complete local provenance remains private.",
+  "entries": [
+    {
+      "file": "originals/background.js",
+      "bytes": 362,
+      "sha256": "3be42b54a69878fe2594e0633f9d89d83d803bd95dd9d7a7a2660c26da045649",
+      "classification": "local candidate baseline; cloud equivalence unverified"
+    },
+    {
+      "file": "originals/contentScript.js",
+      "bytes": 14792,
+      "sha256": "8e67bc7fe086d91057959d428b5d4eb07129ef5e8c2f77959b216147281bb916",
+      "classification": "local candidate baseline; cloud equivalence unverified"
+    },
+    {
+      "file": "originals/contentScript_rel-2.js",
+      "bytes": 3790,
+      "sha256": "1174e911d04578bc35c2cad2755564f7d61f75731995368c8442ac9920658483",
+      "classification": "local candidate baseline; cloud equivalence unverified"
+    },
+    {
+      "file": "originals/contentScript_OLD.js",
+      "bytes": 1766,
+      "sha256": "51f6943fc4e4cb7557d2a78b64276bdd4147b114d0f1d03b36118b53790fe96c",
+      "classification": "local candidate baseline; cloud equivalence unverified"
+    },
+    {
+      "file": "originals/manifest.json",
+      "bytes": 919,
+      "sha256": "acf4ef509c82617ff4a320dd68449b37da1c01de92538994e412678a4faa709e",
+      "classification": "local candidate baseline; cloud equivalence unverified"
+    },
+    {
+      "file": "originals/readme.md",
+      "bytes": 2976,
+      "sha256": "200de60a09d93720a9106ae3d73e91fb2af2d765e34cfd111e80dce0064cf227",
+      "classification": "local candidate baseline; cloud equivalence unverified"
+    },
+    {
+      "file": "archive/supplemental-assets/styles/inspector.css",
+      "bytes": 8176,
+      "sha256": "da1806a7541d94f223121525b732212d0f2f4cc27f5bea7ef8bb233e47eff0f6",
+      "classification": "supplemental local asset; not in six-file cloud inventory"
+    },
+    {
+      "file": "archive/supplemental-assets/icons/icon16.png",
+      "bytes": 181,
+      "sha256": "231386b52236ee46b2b06a088d7262652d41d5e7b1f6985cdcd60e004b9908e2",
+      "classification": "supplemental local asset; not in six-file cloud inventory"
+    },
+    {
+      "file": "archive/supplemental-assets/icons/icon48.png",
+      "bytes": 378,
+      "sha256": "3a86b48dd39908f39c9ad50a1b1e72f5ddc6cd8be33963da4b3a02934d623fec",
+      "classification": "supplemental local asset; not in six-file cloud inventory"
+    },
+    {
+      "file": "archive/supplemental-assets/icons/icon128.png",
+      "bytes": 912,
+      "sha256": "72aacf014921b8f70b825f42ab355371ab6e9cac65cf65df18cf51bee1b7103a",
+      "classification": "supplemental local asset; not in six-file cloud inventory"
+    },
+    {
+      "file": "archive/local-variants/image-alt-text-inspector-modal-update-v5-header-list-only/contentScript.js",
+      "bytes": 14897,
+      "sha256": "30f4574956491904172058105cda0d95d4220f9d18f8d3a13472345ddbf51cf5",
+      "classification": "distinct local variant; cloud equivalence unverified"
+    },
+    {
+      "file": "archive/local-variants/image-alt-text-inspector/background.js",
+      "bytes": 365,
+      "sha256": "f55282932734742897263ec0a7d80e34800923cf26f0c06d8f488053c5103333",
+      "classification": "distinct local variant; cloud equivalence unverified"
+    },
+    {
+      "file": "archive/local-variants/image-alt-text-inspector/contentScript.js",
+      "bytes": 9556,
+      "sha256": "079bfab37c1add61702c05ef008f6a352ccd338c342e058580ff929328871cb9",
+      "classification": "distinct local variant; cloud equivalence unverified"
+    },
+    {
+      "file": "archive/local-variants/image-alt-text-inspector/manifest.json",
+      "bytes": 919,
+      "sha256": "9554c3ced705ba1a190ce26b279b1f98fe9f5d7de374f20fdfdaa53c8c8bcfd0",
+      "classification": "distinct local variant; cloud equivalence unverified"
+    },
+    {
+      "file": "archive/local-variants/image-alt-text-inspector/readme.md",
+      "bytes": 1533,
+      "sha256": "28a838c30d172330d35140c2d67f3c42e40a8a7666693e98727f36f25fdf307d",
+      "classification": "distinct local variant; cloud equivalence unverified"
+    },
+    {
+      "file": "archive/public-baseline/.gitignore",
+      "bytes": 20,
+      "sha256": "2bdfdb216230559f36faf46907142b8afd478401150f810e1ddaf9a4fdcc656c",
+      "classification": "unchanged public pre-engineering baseline at 5d967b90127ee598bcb264de443f3e2a151543b9"
+    },
+    {
+      "file": "archive/public-baseline/README.md",
+      "bytes": 2976,
+      "sha256": "200de60a09d93720a9106ae3d73e91fb2af2d765e34cfd111e80dce0064cf227",
+      "classification": "unchanged public pre-engineering baseline at 5d967b90127ee598bcb264de443f3e2a151543b9"
+    },
+    {
+      "file": "archive/public-baseline/background.js",
+      "bytes": 362,
+      "sha256": "3be42b54a69878fe2594e0633f9d89d83d803bd95dd9d7a7a2660c26da045649",
+      "classification": "unchanged public pre-engineering baseline at 5d967b90127ee598bcb264de443f3e2a151543b9"
+    },
+    {
+      "file": "archive/public-baseline/contentScript.js",
+      "bytes": 15251,
+      "sha256": "2518b72a190fbc1cc211675e184bfebb462a5965e7cc71079ea84c0d168385ce",
+      "classification": "unchanged public pre-engineering baseline at 5d967b90127ee598bcb264de443f3e2a151543b9"
+    },
+    {
+      "file": "archive/public-baseline/icons/icon128.png",
+      "bytes": 912,
+      "sha256": "72aacf014921b8f70b825f42ab355371ab6e9cac65cf65df18cf51bee1b7103a",
+      "classification": "unchanged public pre-engineering baseline at 5d967b90127ee598bcb264de443f3e2a151543b9"
+    },
+    {
+      "file": "archive/public-baseline/icons/icon16.png",
+      "bytes": 181,
+      "sha256": "231386b52236ee46b2b06a088d7262652d41d5e7b1f6985cdcd60e004b9908e2",
+      "classification": "unchanged public pre-engineering baseline at 5d967b90127ee598bcb264de443f3e2a151543b9"
+    },
+    {
+      "file": "archive/public-baseline/icons/icon48.png",
+      "bytes": 378,
+      "sha256": "3a86b48dd39908f39c9ad50a1b1e72f5ddc6cd8be33963da4b3a02934d623fec",
+      "classification": "unchanged public pre-engineering baseline at 5d967b90127ee598bcb264de443f3e2a151543b9"
+    },
+    {
+      "file": "archive/public-baseline/manifest.json",
+      "bytes": 919,
+      "sha256": "acf4ef509c82617ff4a320dd68449b37da1c01de92538994e412678a4faa709e",
+      "classification": "unchanged public pre-engineering baseline at 5d967b90127ee598bcb264de443f3e2a151543b9"
+    },
+    {
+      "file": "archive/public-baseline/styles/inspector.css",
+      "bytes": 9444,
+      "sha256": "02bc4664642c6d6eddb8b5a8271918e6e918b9428d3a8aa203c931773a24415c",
+      "classification": "unchanged public pre-engineering baseline at 5d967b90127ee598bcb264de443f3e2a151543b9"
+    }
+  ]
+}

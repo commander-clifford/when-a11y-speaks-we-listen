@@ -1,0 +1,138 @@
+{
+  "format": "classic-iife",
+  "target": "chrome120",
+  "bytes": 312096,
+  "runtimeRemoteImports": 0,
+  "externalImports": [],
+  "packages": [
+    {
+      "name": "@lit-labs/observers",
+      "version": "2.0.2",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/lit/lit.git",
+        "directory": "packages/labs/observers"
+      }
+    },
+    {
+      "name": "@lit/reactive-element",
+      "version": "2.1.2",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lit/lit.git",
+        "directory": "packages/reactive-element"
+      }
+    },
+    {
+      "name": "@spectrum-web-components/base",
+      "version": "1.12.2",
+      "license": "Apache-2.0",
+      "repository": {
+        "directory": "1st-gen/tools/base",
+        "type": "git",
+        "url": "https://github.com/adobe/spectrum-web-components.git"
+      }
+    },
+    {
+      "name": "@spectrum-web-components/button",
+      "version": "1.12.2",
+      "license": "Apache-2.0",
+      "repository": {
+        "directory": "1st-gen/packages/button",
+        "type": "git",
+        "url": "https://github.com/adobe/spectrum-web-components.git"
+      }
+    },
+    {
+      "name": "@spectrum-web-components/progress-circle",
+      "version": "1.12.2",
+      "license": "Apache-2.0",
+      "repository": {
+        "directory": "1st-gen/packages/progress-circle",
+        "type": "git",
+        "url": "https://github.com/adobe/spectrum-web-components.git"
+      }
+    },
+    {
+      "name": "@spectrum-web-components/reactive-controllers",
+      "version": "1.12.2",
+      "license": "Apache-2.0",
+      "repository": {
+        "directory": "1st-gen/tools/reactive-controllers",
+        "type": "git",
+        "url": "https://github.com/adobe/spectrum-web-components.git"
+      }
+    },
+    {
+      "name": "@spectrum-web-components/shared",
+      "version": "1.12.2",
+      "license": "Apache-2.0",
+      "repository": {
+        "directory": "1st-gen/tools/shared",
+        "type": "git",
+        "url": "https://github.com/adobe/spectrum-web-components.git"
+      }
+    },
+    {
+      "name": "@spectrum-web-components/status-light",
+      "version": "1.12.2",
+      "license": "Apache-2.0",
+      "repository": {
+        "directory": "1st-gen/packages/status-light",
+        "type": "git",
+        "url": "https://github.com/adobe/spectrum-web-components.git"
+      }
+    },
+    {
+      "name": "@spectrum-web-components/theme",
+      "version": "1.12.2",
+      "license": "ISC",
+      "repository": {
+        "directory": "1st-gen/tools/theme",
+        "type": "git",
+        "url": "https://github.com/adobe/spectrum-web-components.git"
+      }
+    },
+    {
+      "name": "focus-visible",
+      "version": "5.2.1",
+      "license": "W3C",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/WICG/focus-visible.git"
+      }
+    },
+    {
+      "name": "lit",
+      "version": "3.3.3",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lit/lit.git",
+        "directory": "packages/lit"
+      }
+    },
+    {
+      "name": "lit-element",
+      "version": "4.2.2",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lit/lit.git",
+        "directory": "packages/lit-element"
+      }
+    },
+    {
+      "name": "lit-html",
+      "version": "3.3.3",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lit/lit.git",
+        "directory": "packages/lit-html"
+      }
+    }
+  ]
+}

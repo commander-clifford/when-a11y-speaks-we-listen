@@ -1,0 +1,13 @@
+# Sanitized export boundary
+
+The reviewed files are applied as a normal successor to the existing public repository history. The separate private working repository's commits, reflogs, Git configuration, hooks, browser profiles, cached dependencies and untracked work are not imported. Existing public commits retain their already-public metadata; new release commits use a neutral author identity.
+
+Included: working extension code/assets with only the release version metadata updated to 2.0.0; all six unchanged local candidate originals; nine unchanged archived references; nine files moved intact from the public pre-engineering root into `archive/public-baseline/`; safe test source apart from the Chrome executable portability adjustment; Spectrum source/tokens/build, local bundle/dependency metadata and legal notices; dependency lockfile with matching release version; feature contract; public references and selected contrast calculations. The existing public root LICENSE is preserved byte-for-byte.
+
+Sanitized or rewritten: README and review/adoption summaries, contributor instructions, ignore rules, and provenance manifest. Provenance preserves repository-relative names, classifications, byte counts and SHA-256 hashes while omitting personal paths, cloud project identifiers, import timestamps and candidate-folder searches. The test helper uses `CHROME_BIN` or `google-chrome` on PATH instead of a captured absolute application path.
+
+Excluded: all raw runtime/test-result JSON other than safe provenance/contrast data; backend logs; all screenshots, including live HBO Max captures; browser/session/report/extension identifiers; source-page record samples; local machine paths; full local Git history. Fresh generated browser output remains ignored until separately reviewed for sharing.
+
+The provenance tradeoff is explicit: this export can verify the fifteen preserved file hashes and reproduce checks, but cannot reconstruct the original local timeline, cloud recovery attempts or complete run evidence. The original repository remains unchanged locally. Cloud content equivalence is still unverified. The six-file baseline and archived variants retain historical unsafe code for comparison; only `extension/` should be installed.
+
+The user explicitly selected the existing public destination and two releases after reviewing the destination and sanitation boundary. Release 1 preserves the public baseline; Release 2 contains the reviewed rebuild. No force push or retagging is intended. The historical root LICENSE, third-party notices, seven available dependency license texts and the upstream MIT notice remain included. See `licenses/README.md` for the remaining license evidence limits.

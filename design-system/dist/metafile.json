@@ -1,0 +1,1503 @@
+{
+  "inputs": {
+    "node_modules/@spectrum-web-components/base/src/version.js": {
+      "bytes": 100,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/theme/src/theme-interfaces.js": {
+      "bytes": 447,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/theme/src/Theme.js": {
+      "bytes": 4345,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/version.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base/src/version.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/theme/src/theme-interfaces.js",
+          "kind": "import-statement",
+          "original": "./theme-interfaces.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/theme/sp-theme.js": {
+      "bytes": 126,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/theme/src/Theme.js",
+          "kind": "import-statement",
+          "original": "./src/Theme.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@lit/reactive-element/css-tag.js": {
+      "bytes": 1585,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@lit/reactive-element/reactive-element.js": {
+      "bytes": 6306,
+      "imports": [
+        {
+          "path": "node_modules/@lit/reactive-element/css-tag.js",
+          "kind": "import-statement",
+          "original": "./css-tag.js"
+        },
+        {
+          "path": "node_modules/@lit/reactive-element/css-tag.js",
+          "kind": "import-statement",
+          "original": "./css-tag.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit-html/lit-html.js": {
+      "bytes": 7309,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/lit-element/lit-element.js": {
+      "bytes": 1124,
+      "imports": [
+        {
+          "path": "node_modules/@lit/reactive-element/reactive-element.js",
+          "kind": "import-statement",
+          "original": "@lit/reactive-element"
+        },
+        {
+          "path": "node_modules/@lit/reactive-element/reactive-element.js",
+          "kind": "import-statement",
+          "original": "@lit/reactive-element"
+        },
+        {
+          "path": "node_modules/lit-html/lit-html.js",
+          "kind": "import-statement",
+          "original": "lit-html"
+        },
+        {
+          "path": "node_modules/lit-html/lit-html.js",
+          "kind": "import-statement",
+          "original": "lit-html"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit-html/is-server.js": {
+      "bytes": 162,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/lit/index.js": {
+      "bytes": 157,
+      "imports": [
+        {
+          "path": "node_modules/@lit/reactive-element/reactive-element.js",
+          "kind": "import-statement",
+          "original": "@lit/reactive-element"
+        },
+        {
+          "path": "node_modules/lit-html/lit-html.js",
+          "kind": "import-statement",
+          "original": "lit-html"
+        },
+        {
+          "path": "node_modules/lit-element/lit-element.js",
+          "kind": "import-statement",
+          "original": "lit-element/lit-element.js"
+        },
+        {
+          "path": "node_modules/lit-html/is-server.js",
+          "kind": "import-statement",
+          "original": "lit-html/is-server.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/base/src/Base.js": {
+      "bytes": 832,
+      "imports": [
+        {
+          "path": "node_modules/lit/index.js",
+          "kind": "import-statement",
+          "original": "lit"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/version.js",
+          "kind": "import-statement",
+          "original": "./version.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@lit/reactive-element/decorators/custom-element.js": {
+      "bytes": 270,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@lit/reactive-element/decorators/property.js": {
+      "bytes": 1057,
+      "imports": [
+        {
+          "path": "node_modules/@lit/reactive-element/reactive-element.js",
+          "kind": "import-statement",
+          "original": "../reactive-element.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@lit/reactive-element/decorators/state.js": {
+      "bytes": 238,
+      "imports": [
+        {
+          "path": "node_modules/@lit/reactive-element/decorators/property.js",
+          "kind": "import-statement",
+          "original": "./property.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@lit/reactive-element/decorators/event-options.js": {
+      "bytes": 243,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@lit/reactive-element/decorators/base.js": {
+      "bytes": 264,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@lit/reactive-element/decorators/query.js": {
+      "bytes": 539,
+      "imports": [
+        {
+          "path": "node_modules/@lit/reactive-element/decorators/base.js",
+          "kind": "import-statement",
+          "original": "./base.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@lit/reactive-element/decorators/query-all.js": {
+      "bytes": 319,
+      "imports": [
+        {
+          "path": "node_modules/@lit/reactive-element/decorators/base.js",
+          "kind": "import-statement",
+          "original": "./base.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@lit/reactive-element/decorators/query-async.js": {
+      "bytes": 311,
+      "imports": [
+        {
+          "path": "node_modules/@lit/reactive-element/decorators/base.js",
+          "kind": "import-statement",
+          "original": "./base.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@lit/reactive-element/decorators/query-assigned-elements.js": {
+      "bytes": 453,
+      "imports": [
+        {
+          "path": "node_modules/@lit/reactive-element/decorators/base.js",
+          "kind": "import-statement",
+          "original": "./base.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@lit/reactive-element/decorators/query-assigned-nodes.js": {
+      "bytes": 392,
+      "imports": [
+        {
+          "path": "node_modules/@lit/reactive-element/decorators/base.js",
+          "kind": "import-statement",
+          "original": "./base.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit/decorators.js": {
+      "bytes": 598,
+      "imports": [
+        {
+          "path": "node_modules/@lit/reactive-element/decorators/custom-element.js",
+          "kind": "import-statement",
+          "original": "@lit/reactive-element/decorators/custom-element.js"
+        },
+        {
+          "path": "node_modules/@lit/reactive-element/decorators/property.js",
+          "kind": "import-statement",
+          "original": "@lit/reactive-element/decorators/property.js"
+        },
+        {
+          "path": "node_modules/@lit/reactive-element/decorators/state.js",
+          "kind": "import-statement",
+          "original": "@lit/reactive-element/decorators/state.js"
+        },
+        {
+          "path": "node_modules/@lit/reactive-element/decorators/event-options.js",
+          "kind": "import-statement",
+          "original": "@lit/reactive-element/decorators/event-options.js"
+        },
+        {
+          "path": "node_modules/@lit/reactive-element/decorators/query.js",
+          "kind": "import-statement",
+          "original": "@lit/reactive-element/decorators/query.js"
+        },
+        {
+          "path": "node_modules/@lit/reactive-element/decorators/query-all.js",
+          "kind": "import-statement",
+          "original": "@lit/reactive-element/decorators/query-all.js"
+        },
+        {
+          "path": "node_modules/@lit/reactive-element/decorators/query-async.js",
+          "kind": "import-statement",
+          "original": "@lit/reactive-element/decorators/query-async.js"
+        },
+        {
+          "path": "node_modules/@lit/reactive-element/decorators/query-assigned-elements.js",
+          "kind": "import-statement",
+          "original": "@lit/reactive-element/decorators/query-assigned-elements.js"
+        },
+        {
+          "path": "node_modules/@lit/reactive-element/decorators/query-assigned-nodes.js",
+          "kind": "import-statement",
+          "original": "@lit/reactive-element/decorators/query-assigned-nodes.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/base/src/sizedMixin.js": {
+      "bytes": 1046,
+      "imports": [
+        {
+          "path": "node_modules/lit/decorators.js",
+          "kind": "import-statement",
+          "original": "lit/decorators.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/base/src/constants.js": {
+      "bytes": 240,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/base/src/index.js": {
+      "bytes": 171,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/Base.js",
+          "kind": "import-statement",
+          "original": "./Base.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/sizedMixin.js",
+          "kind": "import-statement",
+          "original": "./sizedMixin.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/constants.js",
+          "kind": "import-statement",
+          "original": "./constants.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/version.js",
+          "kind": "import-statement",
+          "original": "./version.js"
+        },
+        {
+          "path": "node_modules/lit/index.js",
+          "kind": "import-statement",
+          "original": "lit"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/theme/src/theme-core-tokens.css.js": {
+      "bytes": 134060,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/index.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/theme/core-tokens.js": {
+      "bytes": 186,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/theme/src/Theme.js",
+          "kind": "import-statement",
+          "original": "./src/Theme.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/theme/src/theme-core-tokens.css.js",
+          "kind": "import-statement",
+          "original": "./src/theme-core-tokens.css.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/theme/src/theme-light-core-tokens.css.js": {
+      "bytes": 27200,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/index.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/theme/theme-light-core-tokens.js": {
+      "bytes": 225,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/theme/core-tokens.js",
+          "kind": "import-statement",
+          "original": "./core-tokens.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/theme/src/Theme.js",
+          "kind": "import-statement",
+          "original": "./src/Theme.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/theme/src/theme-light-core-tokens.css.js",
+          "kind": "import-statement",
+          "original": "./src/theme-light-core-tokens.css.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/theme/src/scale-medium-core-tokens.css.js": {
+      "bytes": 30651,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/index.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/theme/scale-medium-core-tokens.js": {
+      "bytes": 228,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/theme/core-tokens.js",
+          "kind": "import-statement",
+          "original": "./core-tokens.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/theme/src/scale-medium-core-tokens.css.js",
+          "kind": "import-statement",
+          "original": "./src/scale-medium-core-tokens.css.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/theme/src/Theme.js",
+          "kind": "import-statement",
+          "original": "./src/Theme.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/base/src/define-element.js": {
+      "bytes": 132,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/base/src/decorators.js": {
+      "bytes": 84,
+      "imports": [
+        {
+          "path": "node_modules/lit/decorators.js",
+          "kind": "import-statement",
+          "original": "lit/decorators.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit-html/directives/if-defined.js": {
+      "bytes": 210,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/lit-html.js",
+          "kind": "import-statement",
+          "original": "../lit-html.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit/directives/if-defined.js": {
+      "bytes": 87,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/directives/if-defined.js",
+          "kind": "import-statement",
+          "original": "lit-html/directives/if-defined.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit-html/directive.js": {
+      "bytes": 481,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/lit-html/directive-helpers.js": {
+      "bytes": 1272,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/lit-html.js",
+          "kind": "import-statement",
+          "original": "./lit-html.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit-html/directives/repeat.js": {
+      "bytes": 1606,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/lit-html.js",
+          "kind": "import-statement",
+          "original": "../lit-html.js"
+        },
+        {
+          "path": "node_modules/lit-html/directive.js",
+          "kind": "import-statement",
+          "original": "../directive.js"
+        },
+        {
+          "path": "node_modules/lit-html/directive-helpers.js",
+          "kind": "import-statement",
+          "original": "../directive-helpers.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit/directives/repeat.js": {
+      "bytes": 79,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/directives/repeat.js",
+          "kind": "import-statement",
+          "original": "lit-html/directives/repeat.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit-html/directives/class-map.js": {
+      "bytes": 1011,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/lit-html.js",
+          "kind": "import-statement",
+          "original": "../lit-html.js"
+        },
+        {
+          "path": "node_modules/lit-html/directive.js",
+          "kind": "import-statement",
+          "original": "../directive.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit/directives/class-map.js": {
+      "bytes": 85,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/directives/class-map.js",
+          "kind": "import-statement",
+          "original": "lit-html/directives/class-map.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit-html/directives/style-map.js": {
+      "bytes": 1102,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/lit-html.js",
+          "kind": "import-statement",
+          "original": "../lit-html.js"
+        },
+        {
+          "path": "node_modules/lit-html/directive.js",
+          "kind": "import-statement",
+          "original": "../directive.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit/directives/style-map.js": {
+      "bytes": 85,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/directives/style-map.js",
+          "kind": "import-statement",
+          "original": "lit-html/directives/style-map.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit-html/async-directive.js": {
+      "bytes": 1389,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/directive-helpers.js",
+          "kind": "import-statement",
+          "original": "./directive-helpers.js"
+        },
+        {
+          "path": "node_modules/lit-html/directive.js",
+          "kind": "import-statement",
+          "original": "./directive.js"
+        },
+        {
+          "path": "node_modules/lit-html/directive.js",
+          "kind": "import-statement",
+          "original": "./directive.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit-html/directives/private-async-helpers.js": {
+      "bytes": 525,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/lit-html/directives/until.js": {
+      "bytes": 1200,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/lit-html.js",
+          "kind": "import-statement",
+          "original": "../lit-html.js"
+        },
+        {
+          "path": "node_modules/lit-html/directive-helpers.js",
+          "kind": "import-statement",
+          "original": "../directive-helpers.js"
+        },
+        {
+          "path": "node_modules/lit-html/async-directive.js",
+          "kind": "import-statement",
+          "original": "../async-directive.js"
+        },
+        {
+          "path": "node_modules/lit-html/directives/private-async-helpers.js",
+          "kind": "import-statement",
+          "original": "./private-async-helpers.js"
+        },
+        {
+          "path": "node_modules/lit-html/directive.js",
+          "kind": "import-statement",
+          "original": "../directive.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit/directives/until.js": {
+      "bytes": 77,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/directives/until.js",
+          "kind": "import-statement",
+          "original": "lit-html/directives/until.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit-html/directives/live.js": {
+      "bytes": 919,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/lit-html.js",
+          "kind": "import-statement",
+          "original": "../lit-html.js"
+        },
+        {
+          "path": "node_modules/lit-html/directive.js",
+          "kind": "import-statement",
+          "original": "../directive.js"
+        },
+        {
+          "path": "node_modules/lit-html/directive-helpers.js",
+          "kind": "import-statement",
+          "original": "../directive-helpers.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit/directives/live.js": {
+      "bytes": 75,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/directives/live.js",
+          "kind": "import-statement",
+          "original": "lit-html/directives/live.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit-html/directives/when.js": {
+      "bytes": 181,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/lit/directives/when.js": {
+      "bytes": 75,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/directives/when.js",
+          "kind": "import-statement",
+          "original": "lit-html/directives/when.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit-html/directives/join.js": {
+      "bytes": 264,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/lit/directives/join.js": {
+      "bytes": 75,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/directives/join.js",
+          "kind": "import-statement",
+          "original": "lit-html/directives/join.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit-html/directives/unsafe-html.js": {
+      "bytes": 838,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/lit-html.js",
+          "kind": "import-statement",
+          "original": "../lit-html.js"
+        },
+        {
+          "path": "node_modules/lit-html/directive.js",
+          "kind": "import-statement",
+          "original": "../directive.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit/directives/unsafe-html.js": {
+      "bytes": 89,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/directives/unsafe-html.js",
+          "kind": "import-statement",
+          "original": "lit-html/directives/unsafe-html.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit-html/directives/ref.js": {
+      "bytes": 996,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/lit-html.js",
+          "kind": "import-statement",
+          "original": "../lit-html.js"
+        },
+        {
+          "path": "node_modules/lit-html/async-directive.js",
+          "kind": "import-statement",
+          "original": "../async-directive.js"
+        },
+        {
+          "path": "node_modules/lit-html/directive.js",
+          "kind": "import-statement",
+          "original": "../directive.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit/directives/ref.js": {
+      "bytes": 73,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/directives/ref.js",
+          "kind": "import-statement",
+          "original": "lit-html/directives/ref.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/base/src/directives.js": {
+      "bytes": 519,
+      "imports": [
+        {
+          "path": "node_modules/lit/directives/if-defined.js",
+          "kind": "import-statement",
+          "original": "lit/directives/if-defined.js"
+        },
+        {
+          "path": "node_modules/lit/directives/repeat.js",
+          "kind": "import-statement",
+          "original": "lit/directives/repeat.js"
+        },
+        {
+          "path": "node_modules/lit/directives/class-map.js",
+          "kind": "import-statement",
+          "original": "lit/directives/class-map.js"
+        },
+        {
+          "path": "node_modules/lit/directives/style-map.js",
+          "kind": "import-statement",
+          "original": "lit/directives/style-map.js"
+        },
+        {
+          "path": "node_modules/lit/directives/until.js",
+          "kind": "import-statement",
+          "original": "lit/directives/until.js"
+        },
+        {
+          "path": "node_modules/lit/directives/live.js",
+          "kind": "import-statement",
+          "original": "lit/directives/live.js"
+        },
+        {
+          "path": "node_modules/lit/directives/when.js",
+          "kind": "import-statement",
+          "original": "lit/directives/when.js"
+        },
+        {
+          "path": "node_modules/lit/directives/join.js",
+          "kind": "import-statement",
+          "original": "lit/directives/join.js"
+        },
+        {
+          "path": "node_modules/lit/directives/unsafe-html.js",
+          "kind": "import-statement",
+          "original": "lit/directives/unsafe-html.js"
+        },
+        {
+          "path": "node_modules/lit/directives/ref.js",
+          "kind": "import-statement",
+          "original": "lit/directives/ref.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/progress-circle/src/progress-circle.css.js": {
+      "bytes": 9466,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/index.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/reactive-controllers/src/LanguageResolution.js": {
+      "bytes": 1488,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/shared/src/get-label-from-slot.js": {
+      "bytes": 217,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/progress-circle/src/ProgressCircle.types.js": {
+      "bytes": 240,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/progress-circle/src/ProgressCircle.base.js": {
+      "bytes": 2711,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/index.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/decorators.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base/src/decorators.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/sizedMixin.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base/src/sizedMixin.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/reactive-controllers/src/LanguageResolution.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/reactive-controllers/src/LanguageResolution.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/shared/src/get-label-from-slot.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/shared/src/get-label-from-slot.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/progress-circle/src/ProgressCircle.types.js",
+          "kind": "import-statement",
+          "original": "./ProgressCircle.types.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/progress-circle/src/ProgressCircle.js": {
+      "bytes": 1347,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/index.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/decorators.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base/src/decorators.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/directives.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base/src/directives.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/progress-circle/src/progress-circle.css.js",
+          "kind": "import-statement",
+          "original": "./progress-circle.css.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/progress-circle/src/ProgressCircle.base.js",
+          "kind": "import-statement",
+          "original": "./ProgressCircle.base.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/progress-circle/src/ProgressCircle.types.js",
+          "kind": "import-statement",
+          "original": "./ProgressCircle.types.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/progress-circle/sp-progress-circle.js": {
+      "bytes": 228,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/define-element.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base/src/define-element.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/progress-circle/src/ProgressCircle.js",
+          "kind": "import-statement",
+          "original": "./src/ProgressCircle.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/reactive-controllers/src/PendingState.js": {
+      "bytes": 1083,
+      "imports": [
+        {
+          "path": "node_modules/lit/index.js",
+          "kind": "import-statement",
+          "original": "lit"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/progress-circle/sp-progress-circle.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/progress-circle/sp-progress-circle.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/button/src/button.css.js": {
+      "bytes": 40669,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/index.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/focus-visible/dist/focus-visible.js": {
+      "bytes": 11506,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/@spectrum-web-components/shared/src/focus-visible.js": {
+      "bytes": 1123,
+      "imports": [
+        {
+          "path": "node_modules/focus-visible/dist/focus-visible.js",
+          "kind": "dynamic-import",
+          "original": "focus-visible"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/shared/src/focusable.js": {
+      "bytes": 4174,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/index.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/decorators.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base/src/decorators.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/shared/src/focus-visible.js",
+          "kind": "import-statement",
+          "original": "./focus-visible.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/shared/src/like-anchor.js": {
+      "bytes": 1334,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/index.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/decorators.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base/src/decorators.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/directives.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base/src/directives.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@lit-labs/observers/mutation-controller.js": {
+      "bytes": 848,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/shared/src/observe-slot-text.js": {
+      "bytes": 1415,
+      "imports": [
+        {
+          "path": "node_modules/lit/decorators.js",
+          "kind": "import-statement",
+          "original": "lit/decorators.js"
+        },
+        {
+          "path": "node_modules/@lit-labs/observers/mutation-controller.js",
+          "kind": "import-statement",
+          "original": "@lit-labs/observers/mutation-controller.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/button/src/button-base.css.js": {
+      "bytes": 1558,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/index.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/button/src/ButtonBase.js": {
+      "bytes": 3614,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/index.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/decorators.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base/src/decorators.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/shared/src/focusable.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/shared/src/focusable.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/shared/src/like-anchor.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/shared/src/like-anchor.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/shared/src/observe-slot-text.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/shared/src/observe-slot-text.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/button/src/button-base.css.js",
+          "kind": "import-statement",
+          "original": "./button-base.css.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/button/src/Button.js": {
+      "bytes": 2448,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/index.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/decorators.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base/src/decorators.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/reactive-controllers/src/PendingState.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/reactive-controllers/src/PendingState.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/button/src/button.css.js",
+          "kind": "import-statement",
+          "original": "./button.css.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/button/src/ButtonBase.js",
+          "kind": "import-statement",
+          "original": "./ButtonBase.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/button/sp-button.js": {
+      "bytes": 194,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/define-element.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base/src/define-element.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/button/src/Button.js",
+          "kind": "import-statement",
+          "original": "./src/Button.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/status-light/src/status-light.css.js": {
+      "bytes": 9944,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/index.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/status-light/src/StatusLight.types.js": {
+      "bytes": 761,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/status-light/src/StatusLight.base.js": {
+      "bytes": 768,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/index.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/decorators.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base/src/decorators.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/sizedMixin.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base/src/sizedMixin.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/status-light/src/StatusLight.types.js",
+          "kind": "import-statement",
+          "original": "./StatusLight.types.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/status-light/src/StatusLight.js": {
+      "bytes": 1194,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/index.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/decorators.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base/src/decorators.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/status-light/src/status-light.css.js",
+          "kind": "import-statement",
+          "original": "./status-light.css.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/status-light/src/StatusLight.base.js",
+          "kind": "import-statement",
+          "original": "./StatusLight.base.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/status-light/src/StatusLight.types.js",
+          "kind": "import-statement",
+          "original": "./StatusLight.types.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@spectrum-web-components/status-light/sp-status-light.js": {
+      "bytes": 216,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/base/src/define-element.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/base/src/define-element.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/status-light/src/StatusLight.js",
+          "kind": "import-statement",
+          "original": "./src/StatusLight.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "design-system/sample.js": {
+      "bytes": 8342,
+      "imports": [
+        {
+          "path": "node_modules/@spectrum-web-components/theme/sp-theme.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/theme/sp-theme.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/theme/theme-light-core-tokens.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/theme/theme-light-core-tokens.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/theme/scale-medium-core-tokens.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/theme/scale-medium-core-tokens.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/button/sp-button.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/button/sp-button.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/status-light/sp-status-light.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/status-light/sp-status-light.js"
+        },
+        {
+          "path": "node_modules/@spectrum-web-components/progress-circle/sp-progress-circle.js",
+          "kind": "import-statement",
+          "original": "@spectrum-web-components/progress-circle/sp-progress-circle.js"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "design-system/dist/sample.js.LEGAL.txt": {
+      "imports": [],
+      "exports": [],
+      "inputs": {},
+      "bytes": 1721
+    },
+    "design-system/dist/sample.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "design-system/sample.js",
+      "inputs": {
+        "node_modules/focus-visible/dist/focus-visible.js": {
+          "bytesInOutput": 3044
+        },
+        "node_modules/@spectrum-web-components/base/src/version.js": {
+          "bytesInOutput": 27
+        },
+        "node_modules/@spectrum-web-components/theme/src/theme-interfaces.js": {
+          "bytesInOutput": 340
+        },
+        "node_modules/@spectrum-web-components/theme/src/Theme.js": {
+          "bytesInOutput": 4038
+        },
+        "node_modules/@spectrum-web-components/theme/sp-theme.js": {
+          "bytesInOutput": 36
+        },
+        "node_modules/@lit/reactive-element/css-tag.js": {
+          "bytesInOutput": 1337
+        },
+        "node_modules/@lit/reactive-element/reactive-element.js": {
+          "bytesInOutput": 5899
+        },
+        "node_modules/lit-html/lit-html.js": {
+          "bytesInOutput": 7122
+        },
+        "node_modules/lit-element/lit-element.js": {
+          "bytesInOutput": 742
+        },
+        "node_modules/lit/index.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/lit-html/is-server.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/@spectrum-web-components/base/src/Base.js": {
+          "bytesInOutput": 619
+        },
+        "node_modules/@lit/reactive-element/decorators/custom-element.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/lit/decorators.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/@lit/reactive-element/decorators/property.js": {
+          "bytesInOutput": 801
+        },
+        "node_modules/@lit/reactive-element/decorators/state.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/@lit/reactive-element/decorators/event-options.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/@lit/reactive-element/decorators/base.js": {
+          "bytesInOutput": 120
+        },
+        "node_modules/@lit/reactive-element/decorators/query.js": {
+          "bytesInOutput": 357
+        },
+        "node_modules/@lit/reactive-element/decorators/query-all.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/@lit/reactive-element/decorators/query-async.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/@lit/reactive-element/decorators/query-assigned-elements.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/@lit/reactive-element/decorators/query-assigned-nodes.js": {
+          "bytesInOutput": 176
+        },
+        "node_modules/@spectrum-web-components/base/src/sizedMixin.js": {
+          "bytesInOutput": 747
+        },
+        "node_modules/@spectrum-web-components/theme/src/theme-core-tokens.css.js": {
+          "bytesInOutput": 133932
+        },
+        "node_modules/@spectrum-web-components/theme/core-tokens.js": {
+          "bytesInOutput": 48
+        },
+        "node_modules/@spectrum-web-components/theme/src/theme-light-core-tokens.css.js": {
+          "bytesInOutput": 27066
+        },
+        "node_modules/@spectrum-web-components/theme/theme-light-core-tokens.js": {
+          "bytesInOutput": 44
+        },
+        "node_modules/@spectrum-web-components/theme/src/scale-medium-core-tokens.css.js": {
+          "bytesInOutput": 30516
+        },
+        "node_modules/@spectrum-web-components/theme/scale-medium-core-tokens.js": {
+          "bytesInOutput": 45
+        },
+        "node_modules/@spectrum-web-components/base/src/define-element.js": {
+          "bytesInOutput": 56
+        },
+        "node_modules/lit-html/directives/if-defined.js": {
+          "bytesInOutput": 14
+        },
+        "node_modules/lit/directives/if-defined.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/@spectrum-web-components/base/src/directives.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/lit-html/directive.js": {
+          "bytesInOutput": 299
+        },
+        "node_modules/lit-html/directive-helpers.js": {
+          "bytesInOutput": 633
+        },
+        "node_modules/lit-html/directives/repeat.js": {
+          "bytesInOutput": 1190
+        },
+        "node_modules/lit/directives/repeat.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/lit-html/directives/class-map.js": {
+          "bytesInOutput": 734
+        },
+        "node_modules/lit/directives/class-map.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/lit-html/directives/style-map.js": {
+          "bytesInOutput": 828
+        },
+        "node_modules/lit/directives/style-map.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/lit-html/async-directive.js": {
+          "bytesInOutput": 1053
+        },
+        "node_modules/lit-html/directives/private-async-helpers.js": {
+          "bytesInOutput": 266
+        },
+        "node_modules/lit-html/directives/until.js": {
+          "bytesInOutput": 762
+        },
+        "node_modules/lit/directives/until.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/lit-html/directives/live.js": {
+          "bytesInOutput": 564
+        },
+        "node_modules/lit/directives/live.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/lit-html/directives/when.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/lit/directives/when.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/lit-html/directives/join.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/lit/directives/join.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/lit-html/directives/unsafe-html.js": {
+          "bytesInOutput": 536
+        },
+        "node_modules/lit/directives/unsafe-html.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/lit-html/directives/ref.js": {
+          "bytesInOutput": 671
+        },
+        "node_modules/lit/directives/ref.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/@spectrum-web-components/progress-circle/src/progress-circle.css.js": {
+          "bytesInOutput": 9340
+        },
+        "node_modules/@spectrum-web-components/reactive-controllers/src/LanguageResolution.js": {
+          "bytesInOutput": 1289
+        },
+        "node_modules/@spectrum-web-components/shared/src/get-label-from-slot.js": {
+          "bytesInOutput": 130
+        },
+        "node_modules/@spectrum-web-components/progress-circle/src/ProgressCircle.types.js": {
+          "bytesInOutput": 53
+        },
+        "node_modules/@spectrum-web-components/progress-circle/src/ProgressCircle.base.js": {
+          "bytesInOutput": 1997
+        },
+        "node_modules/@spectrum-web-components/progress-circle/src/ProgressCircle.js": {
+          "bytesInOutput": 863
+        },
+        "node_modules/@spectrum-web-components/progress-circle/sp-progress-circle.js": {
+          "bytesInOutput": 27
+        },
+        "node_modules/@spectrum-web-components/reactive-controllers/src/PendingState.js": {
+          "bytesInOutput": 906
+        },
+        "node_modules/@spectrum-web-components/button/src/button.css.js": {
+          "bytesInOutput": 40552
+        },
+        "node_modules/@spectrum-web-components/shared/src/focus-visible.js": {
+          "bytesInOutput": 1047
+        },
+        "node_modules/@spectrum-web-components/shared/src/focusable.js": {
+          "bytesInOutput": 3867
+        },
+        "node_modules/@spectrum-web-components/shared/src/like-anchor.js": {
+          "bytesInOutput": 1064
+        },
+        "node_modules/@lit-labs/observers/mutation-controller.js": {
+          "bytesInOutput": 769
+        },
+        "node_modules/@spectrum-web-components/shared/src/observe-slot-text.js": {
+          "bytesInOutput": 1173
+        },
+        "node_modules/@spectrum-web-components/button/src/button-base.css.js": {
+          "bytesInOutput": 1436
+        },
+        "node_modules/@spectrum-web-components/button/src/ButtonBase.js": {
+          "bytesInOutput": 3020
+        },
+        "node_modules/@spectrum-web-components/button/src/Button.js": {
+          "bytesInOutput": 1951
+        },
+        "node_modules/@spectrum-web-components/button/sp-button.js": {
+          "bytesInOutput": 17
+        },
+        "node_modules/@spectrum-web-components/status-light/src/status-light.css.js": {
+          "bytesInOutput": 9821
+        },
+        "node_modules/@spectrum-web-components/status-light/src/StatusLight.types.js": {
+          "bytesInOutput": 293
+        },
+        "node_modules/@spectrum-web-components/status-light/src/StatusLight.base.js": {
+          "bytesInOutput": 395
+        },
+        "node_modules/@spectrum-web-components/status-light/src/StatusLight.js": {
+          "bytesInOutput": 687
+        },
+        "node_modules/@spectrum-web-components/status-light/sp-status-light.js": {
+          "bytesInOutput": 23
+        },
+        "design-system/sample.js": {
+          "bytesInOutput": 6069
+        }
+      },
+      "bytes": 312096
+    }
+  }
+}

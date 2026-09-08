@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Image Alt Text Inspector",
+  "version": "0.1.9",
+  "description": "Scrapes all images from the current webpage along with the alt text and displays them on a new page.",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "commands": {
+    "activate_extension": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+I",
+        "mac": "Command+Shift+I"
+      },
+      "description": "Activate Image Alt Text Inspector"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["styles/inspector.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

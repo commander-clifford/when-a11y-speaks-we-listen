@@ -1,0 +1,30 @@
+/* Semantic aliases consume actual Spectrum 1.12.2 core tokens.
+   Fallbacks equal the selected light/medium vendor values, except the explicitly
+   local system font policy. Keep tokens.json in step with this mapping. */
+sp-theme {
+  --a11y-canvas: var(--spectrum-gray-100, #f8f8f8);
+  --a11y-surface: var(--spectrum-gray-50, #fff);
+  --a11y-subtle: var(--spectrum-gray-200, #e6e6e6);
+  --a11y-border: var(--spectrum-gray-300, #d5d5d5);
+  --a11y-text: var(--spectrum-gray-800, #222);
+  --a11y-secondary: var(--spectrum-gray-700, #464646);
+  --a11y-accent: var(--spectrum-accent-color-900, #0265dc);
+  --a11y-positive: var(--spectrum-green-900, #007a4d);
+  --a11y-notice: var(--spectrum-orange-900, #b14c00);
+  --a11y-negative: var(--spectrum-red-900, #d31510);
+  --a11y-focus: var(--spectrum-focus-indicator-color, #147af3);
+  --a11y-type-small: var(--spectrum-font-size-75, 12px);
+  --a11y-type-body: var(--spectrum-font-size-100, 14px);
+  --a11y-type-subtitle: var(--spectrum-font-size-300, 18px);
+  --a11y-type-title: var(--spectrum-font-size-700, 28px);
+  --a11y-space-1: var(--spectrum-spacing-100, 8px);
+  --a11y-space-2: var(--spectrum-spacing-200, 12px);
+  --a11y-space-3: var(--spectrum-spacing-300, 16px);
+  --a11y-space-4: var(--spectrum-spacing-400, 24px);
+  --a11y-space-5: var(--spectrum-spacing-500, 32px);
+  --a11y-space-6: var(--spectrum-spacing-600, 40px);
+  --a11y-radius: var(--spectrum-corner-radius-200, 8px);
+  --a11y-system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Trebuchet MS", "Lucida Grande", sans-serif;
+  --spectrum-sans-font-family-stack: var(--a11y-system-font);
+  --spectrum-font-family: var(--a11y-system-font);
+}

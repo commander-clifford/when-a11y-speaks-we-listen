@@ -1,0 +1,5 @@
+# License evidence
+
+The existing public same-project repository at `commander-clifford/a11y-chats`, commit `5d967b90127ee598bcb264de443f3e2a151543b9`, supplies the MIT text retained as `original-public-repository.LICENSE`. Its README, background script and manifest exactly match the local baseline. This is an upstream notice and lineage reference, not a newly assigned blanket license or proof of cloud-source equivalence. Confirm rights for the working derivative and all historical/local assets before general distribution.
+
+`package-notices.json` identifies the selected bundled dependencies and available supplied full license texts. Bundled notices remain in `design-system/dist/sample.js.LEGAL.txt`; package declarations remain in `design-system/dist/package-evidence.json`. The installed Spectrum packages did not include standalone LICENSE/NOTICE files at their package roots. Their source headers and bundle notices are retained; the theme manifest declares ISC while source headers use Apache-2.0. This package does not claim that discrepancy is resolved or that this is a complete distribution license packet.

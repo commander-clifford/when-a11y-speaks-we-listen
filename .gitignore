@@ -1,2 +1,18 @@
+node_modules/
 .DS_Store
-Thumbs.db
+coverage/
+test-results/
+playwright-report/
+work/
+.env
+.env.*
+*.pem
+*.key
+# Generated browser reports may include local paths, URLs and session identifiers.
+audit/*.json
+!audit/provenance.json
+!audit/color-contrast.json
+audit/*.txt
+audit/screenshots/
+audit/baseline/
+design-system/check-results.json

@@ -1,0 +1,56 @@
+/* Engineering refinements for the existing inspector components. */
+[hidden] { display: none !important; }
+body { line-height: 1.5; }
+button { font: inherit; }
+h1, h2, h3, p, dl { margin-top: 0; }
+dd { margin-inline-start: 0; }
+button:focus-visible, a:focus-visible {
+  outline: 3px solid var(--md-primary) !important;
+  outline-offset: 4px;
+}
+.skip-link { position: absolute; left: 16px; top: -100px; padding: 12px; background: var(--md-surface); z-index: 100; }
+.skip-link:focus { top: 12px; }
+.report-heading, .results-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+.report-heading { margin-bottom: 20px; }
+.report-heading h1 { margin-bottom: 4px; font-size: clamp(1.8rem, 4vw, 2.4rem); }
+.report-heading p, .results-heading h2, .results-heading p { margin-bottom: 0; }
+.page-header h2 { margin: 0 0 12px; font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.2; overflow-wrap: anywhere; }
+.page-context .row { display: grid; grid-template-columns: minmax(80px, auto) minmax(0, 1fr); }
+.page-context, .kvs, .card-metadata, .modal-meta { margin-bottom: 0; }
+.desc { white-space: pre-wrap; }
+.scan-summary { margin: 28px 0; }
+.scan-summary h2 { font-size: 1.2rem; margin-bottom: 8px; }
+.coverage-note { color: var(--md-on-surface-variant); font-size: .92rem; }
+.error-message { padding: 16px; margin-bottom: 20px; border: 1px solid var(--md-on-error-container); border-radius: var(--radius-sm); background: var(--md-error-container); color: var(--md-on-error-container); overflow-wrap: anywhere; }
+.action-button { border: 1px solid var(--md-primary); border-radius: var(--radius-xs); background: var(--md-primary); color: var(--md-on-primary); padding: 10px 16px; min-height: 44px; cursor: pointer; }
+.action-button:disabled { cursor: default; opacity: .65; }
+.image-card { cursor: default; }
+.image-card:hover { transform: none; box-shadow: var(--shadow-1); }
+.image-heading { font-size: 1.1rem; margin-bottom: 12px; }
+.card-metadata .value, .detail-value, .modal-content h2 { min-width: 0; overflow-wrap: anywhere; }
+.raw-text { white-space: pre-wrap; }
+.detail-trigger { margin-top: 8px; }
+.preview-unavailable { padding: 20px; color: var(--md-on-surface-variant); text-align: center; }
+.preview { max-height: 420px; }
+.preview img { object-fit: contain; }
+.modal-shell { color: var(--md-on-surface); }
+.modal-shell::backdrop { background: rgba(28, 27, 31, .32); backdrop-filter: blur(14px) saturate(1.15); }
+.modal-position { margin: 0; }
+.modal-content, .modal-meta { min-width: 0; }
+.detail-row { margin: 0; }
+@media (max-width: 640px) {
+  .page-context .row { display: block; }
+  .page-context dt { margin-bottom: 4px; }
+  .card-metadata .row { display: block; }
+  .card-metadata dt { margin-bottom: 4px; }
+  .report-heading { align-items: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+@media (forced-colors: active) {
+  button:focus-visible, a:focus-visible { outline-color: Highlight !important; }
+  .action-button, .icon-button, .nav-button { border: 1px solid ButtonText; }
+  .image-card, .detail-row, .kv { border: 1px solid CanvasText; }
+}

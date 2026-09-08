@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'">
+  <title>A11y Chats · Spectrum foundation</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="sample.css">
+  <script defer src="dist/sample.js"></script>
+</head>
+<body>
+<sp-theme system="spectrum" color="light" scale="medium" lang="en">
+  <a class="skip-link" href="#workspace">Skip to image inspection</a>
+  <header class="app-header">
+    <div class="brand"><img src="../extension/icons/icon48.png" width="32" height="32" alt=""><strong>A11y Chats</strong><span class="brand-divider" aria-hidden="true"></span><span>Image inspector</span></div>
+    <a href="#foundation">Spectrum foundation <span aria-hidden="true">↓</span></a>
+  </header>
+  <main>
+    <div class="page-heading">
+      <div><p class="eyebrow">EXAMPLE REPORT</p><h1>Image alternatives</h1><p class="lead">See the image. Read the evidence. Decide in context.</p></div>
+      <div class="sample-picker"><label for="state-picker">Example state</label><select id="state-picker"><option value="complete">Complete</option><option value="partial">Partial</option><option value="scanning">Scanning</option><option value="stopped">Stopped</option><option value="error">Error</option><option value="empty">Empty</option></select></div>
+    </div>
+    <section class="source-bar" aria-label="Report source">
+      <div><span class="field-label">SOURCE</span><strong>Local component sample</strong><span class="source-note">Three examples use the extension icon. No website has been scanned.</span></div>
+      <div class="actions"><sp-button id="scan-button" variant="accent">Run sample scan</sp-button><sp-button id="stop-button" variant="secondary" treatment="outline" hidden>Stop and keep results</sp-button></div>
+    </section>
+    <section class="scan-status" aria-label="Scan status">
+      <div class="status-heading"><sp-status-light id="status-light" variant="positive">Complete</sp-status-light><sp-progress-circle id="scan-progress" size="s" label="Sample inspection in progress" indeterminate hidden></sp-progress-circle><span id="scan-summary">3 images retained · 2 scrollable components checked</span></div>
+      <p id="scan-description">The example inspection finished within its limits. Image purpose still needs a human decision.</p>
+    </section>
+    <p id="announcement" class="sr-only" role="status" aria-atomic="true"></p>
+    <details class="page-metadata"><summary>Page metadata <span>Title, description, canonical URL & social fields</span></summary><p class="catalog-note">These values describe this local fixture, not a scanned website.</p><dl><div><dt>Title</dt><dd>A11y Chats · Spectrum foundation</dd></div><div><dt>Description</dt><dd>Local image-inspection component sample with three example alt states.</dd></div><div><dt>Source URL</dt><dd>design-system/index.html (local file)</dd></div><div><dt>Canonical / Open Graph URL</dt><dd>(not set)</dd></div><div><dt>Language</dt><dd>en</dd></div><div><dt>Robots / author / generator</dt><dd>(not set)</dd></div><div><dt>Open Graph title / description / image / type</dt><dd>(not set)</dd></div><div><dt>Twitter title / description / image / card</dt><dd>(not set)</dd></div><div><dt>Viewport</dt><dd>width=device-width, initial-scale=1</dd></div></dl></details>
+    <section id="workspace" tabindex="-1" aria-labelledby="images-heading">
+      <div class="section-heading"><div><h2 id="images-heading">Retained images <span id="result-count" class="count">3</span></h2><p>Original alt values stay separate from the review status.</p></div><span id="image-selection-prompt" class="field-label">SELECT AN IMAGE FOR DETAILS</span></div>
+      <div id="results" class="workspace-grid">
+        <div id="image-list" class="image-list" aria-label="Example retained images"></div>
+        <aside class="evidence-panel" aria-labelledby="evidence-heading"><div class="panel-heading"><h3 id="evidence-heading">What to inspect</h3><span class="field-label">IMAGE EVIDENCE</span></div><dl><div><dt>Source attribute</dt><dd>Keep the original <code>alt</code> value, including an empty value.</dd></div><div><dt>Image purpose</dt><dd>Consider the surrounding content and what a person needs to understand.</dd></div><div><dt>Other signals</dt><dd>Review labels, role, hidden state, dimensions, and lazy source metadata.</dd></div></dl><p class="context-note">An empty alt can be correct for a decorative image. A report status is evidence to review, not an automatic accessibility verdict.</p></aside>
+      </div>
+      <div id="no-results" class="no-results" hidden><h3 id="no-results-title">No images found</h3><p id="no-results-copy"></p></div>
+    </section>
+    <section id="foundation" class="foundation" aria-labelledby="foundation-heading">
+      <div class="section-heading"><div><p class="eyebrow">SELECTED DESIGN FOUNDATION</p><h2 id="foundation-heading">Adobe Spectrum, in use</h2><p>Real Spectrum Web Components and core tokens. This sample is separate from the current native report.</p></div><a href="adoption.md">Adoption notes</a></div>
+      <div class="catalog-grid">
+        <section class="catalog-block" aria-labelledby="actions-heading"><h3 id="actions-heading">Actions & progress</h3><div class="catalog-actions"><sp-button id="catalog-open" variant="accent">Inspect image</sp-button><sp-button id="catalog-scan" variant="secondary" treatment="outline">Run sample</sp-button><sp-button variant="secondary" disabled>Unavailable</sp-button></div><div class="progress-example"><sp-progress-circle size="s" label="Example scan progress" progress="60"></sp-progress-circle><span>Known progress: 60% example</span></div><p class="catalog-note">Actions use vendor styles. Progress has an accessible label; scan feedback includes words.</p></section>
+        <section class="catalog-block" aria-labelledby="states-heading"><h3 id="states-heading">Status language</h3><div class="status-catalog"><sp-status-light variant="positive">Complete</sp-status-light><sp-status-light variant="notice">Partial</sp-status-light><sp-status-light variant="info">Scanning</sp-status-light><sp-status-light variant="neutral">Stopped</sp-status-light><sp-status-light variant="negative">Error</sp-status-light><sp-status-light variant="neutral">Empty</sp-status-light></div><p class="catalog-note">Color supports each text label. “Complete” describes the scan, not WCAG conformance.</p></section>
+        <section class="catalog-block" aria-labelledby="type-heading"><h3 id="type-heading">Type & rhythm</h3><p class="type-title">Image evidence</p><p class="type-subtitle">Keep the context</p><p class="type-body">Readable details, predictable spacing.</p><p class="catalog-note">Spectrum sizes: 28 / 18 / 14 px. Local system font stack; Adobe Clean is not downloaded.</p></section>
+      </div>
+      <div class="color-catalog" aria-label="Spectrum color tokens"><div class="color-item"><span class="swatch canvas"></span><strong>Canvas</strong><code>#F8F8F8</code></div><div class="color-item"><span class="swatch surface"></span><strong>Surface</strong><code>#FFFFFF</code></div><div class="color-item"><span class="swatch ink"></span><strong>Text</strong><code>#222222</code></div><div class="color-item"><span class="swatch accent"></span><strong>Accent</strong><code>#0265DC</code></div><div class="color-item"><span class="swatch positive"></span><strong>Positive</strong><code>#007A4D</code></div><div class="color-item"><span class="swatch notice"></span><strong>Notice</strong><code>#B14C00</code></div><div class="color-item"><span class="swatch negative"></span><strong>Negative</strong><code>#D31510</code></div></div>
+    </section>
+    <footer><span>Spectrum Web Components 1.12.2 · Light / medium · Locally bundled</span><a href="tokens.json">Token mapping</a></footer>
+  </main>
+  <dialog id="image-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-summary">
+    <div class="dialog-header"><div><p class="eyebrow">EXAMPLE IMAGE</p><h2 id="dialog-title" tabindex="-1">Image details</h2></div><sp-button id="close-dialog" variant="secondary" treatment="outline">Close</sp-button></div>
+    <p id="dialog-summary">Original image attributes and interpretation notes.</p>
+    <div class="dialog-body"><div class="dialog-media"><img src="../extension/icons/icon128.png" width="256" height="256" alt="Extension icon shown as a local example"><span>Local fixture · 128 × 128 pixels</span></div><div><sp-status-light id="dialog-alt-status" variant="info">Alt present</sp-status-light><dl id="dialog-details"></dl><p id="dialog-note" class="context-note"></p></div></div>
+    <div class="dialog-footer"><sp-button id="previous-image" variant="secondary" treatment="outline">Previous image</sp-button><span id="dialog-position" role="status" aria-live="polite"></span><sp-button id="next-image" variant="secondary" treatment="outline">Next image</sp-button></div>
+  </dialog>
+</sp-theme>
+</body>
+</html>
