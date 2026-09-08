@@ -4,7 +4,7 @@ A local Chrome extension for inspecting raw image attributes and page/social met
 
 Review each webpage image beside its actual alt text without opening developer tools. This is the engineering-reviewed early local-install release for copywriters and other reviewers. Its working report uses native components; the reviewed [Adobe Spectrum sample](design-system/index.html) remains separate. Integration is paused.
 
-**[Download Release 2](https://github.com/commander-clifford/a11y-chats/releases/download/v2.0.0/a11y-chats-2.0.0.zip)** · [Release notes](https://github.com/commander-clifford/a11y-chats/releases/tag/v2.0.0)
+**[Visit the website](https://commander-clifford.github.io/a11y-chats/)** · [Download Release 2](https://github.com/commander-clifford/a11y-chats/releases/download/v2.0.0/a11y-chats-2.0.0.zip) · [Release notes](https://github.com/commander-clifford/a11y-chats/releases/tag/v2.0.0)
 
 The ZIP contains only the installable extension. Unzip it, then use the resulting folder for Load unpacked. When installing from this source repository, use `extension/`. This is not a Chrome Web Store listing.
 
